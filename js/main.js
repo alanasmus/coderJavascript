@@ -13,7 +13,8 @@ if (user != "" && password != ""){
     alert("No ingresaste usuario y contraseña");
 }
 
-let ingreso = parseInt(prompt("Seleccioná tu producto \n 1-Cuaderno universitario \n 2-Cuaderno a5 \n 3-Libreta a6"))
+//Primer Prueba de simulador
+/* let ingreso = parseInt(prompt("Seleccioná tu producto \n 1-Cuaderno universitario \n 2-Cuaderno a5 \n 3-Libreta a6"))
 let cantidad = parseInt(prompt("Ingresa la cantidad"));
 switch (ingreso){
     case 1:
@@ -28,5 +29,47 @@ switch (ingreso){
     default:
         alert("Error en selección")
         break;
-}
+} */
  
+//Creo la Clase
+class Producto {
+    constructor(nombre, precio, stock) {
+        this.nombre = nombre;
+        this.precio= parseFloat (precio);
+        this.stock = parseFloat (stock);
+    }
+    sumaGanancia() {
+        this.precio = this.precio * 1.4;
+    }
+}
+//Creo el array
+const almacen = [];
+
+//Mi primer producto
+const producto1 = new Producto ("Lapiz", 50, 10);
+console.log(producto1);
+
+//Funcion para nuevos productos 
+function crearProducto () {
+    let nombre = prompt("Ingrese nombre del nuevo producto"), precio = prompt("Ingrese el precio"), stock = prompt("Ingrese Stock");
+    let nuevoProducto = new Producto(nombre, precio, stock);        
+    return nuevoProducto;
+}
+function cargarProducto(nuevoProducto) {
+    almacen.push(nuevoProducto);
+}
+
+//Defino nuevoProducto
+let nuevoProducto = crearProducto();
+
+console.log(almacen);
+
+cargarProducto(producto1);
+cargarProducto(nuevoProducto);
+console.log(almacen);
+
+//Recargo la ganancia al precio de costo
+for (const Producto of almacen) {
+    Producto.sumaGanancia();
+    console.log("El precio final es " + Producto.precio);
+}
