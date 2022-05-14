@@ -29,13 +29,14 @@ const almacen = [];
 
 //Mi stock de productos iniciales
 const producto1 = new Producto ("Lapiz", 50, 10);
-const producto2 = new Producto ("Lapicera", 90, 20);
-console.log(producto1, producto2);
+const producto2 = new Producto ("Lapicera negra", 90, 20);
+const producto3 = new Producto ("Lapicera azul", 90, 15);
+console.log(producto1, producto2, producto3);
 
 //Funcion para cargar nuevos productos, para luego sumarlo al array "almacen" 
 function crearProducto () {
     let nombre = prompt("Ingrese nombre del nuevo producto"), precio = prompt("Ingrese el precio"), stock = prompt("Ingrese Stock");
-    let nuevoProducto = new Producto(nombre, precio, stock);        
+    let nuevoProducto = new Producto(nombre, precio, stock);
     return nuevoProducto;
 }
 function cargarProducto(nuevoProducto) {
@@ -47,7 +48,9 @@ let nuevoProducto = crearProducto();
 
 console.log(almacen);
 
-cargarProducto(producto1, producto2);
+cargarProducto(producto1);
+cargarProducto(producto2);
+cargarProducto(producto3);
 cargarProducto(nuevoProducto);
 console.log(almacen);
 
@@ -57,3 +60,11 @@ for (const Producto of almacen) {
     console.log("El precio final es " + Producto.precio);
 }
 
+//Agrego un metodo de busca "filter", con el objetivo de poder encontrar elementos que cumplan ciertas condiciones en su nombre escribiendolo exactamente como es
+function buscarProducto () {
+    let busqueda = prompt("Busca un producto por su nombre");
+    const resultadoBusqueda = almacen.filter( (el) => el.nombre.includes(busqueda));
+    return resultadoBusqueda;
+}
+
+console.log(buscarProducto());
