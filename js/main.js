@@ -1,3 +1,4 @@
+/*
 function inicioSesion(mensaje) {
     let sesion = prompt(mensaje);
     console.log(sesion);
@@ -68,3 +69,4 @@ function buscarProducto () {
 }
 
 console.log(buscarProducto());
+*/
