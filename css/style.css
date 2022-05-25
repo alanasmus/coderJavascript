@@ -25,9 +25,12 @@ header{
     padding: 0.5rem 2rem;
 }
 
-.menu_list {
+.usuario_list {
     padding: 1rem 2rem;
     align-items: center;
+}
+
+.menu_text {
     color: #EEEEBB;
     font-weight: bolder;
 }
@@ -39,4 +42,83 @@ main{
     background-size: cover;
     min-height: 90vh;
     color: rgb(195, 255, 255);
+}
+
+.home {
+    min-height: 80vh;
+    width: 100%;
+}
+
+.home_container {
+    width: 80%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: auto 1fr;
+    padding-top: 4vh;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 2rem;
+}
+
+.home_picture {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1 / 4;
+}
+
+.home_picture_principal {
+    max-height: 60vh;
+    min-width: 320px;
+    align-self: center;
+    border-radius: 5px;
+}
+
+.home_title {
+    width: 30%;
+    align-items: center;
+    justify-items: center;
+    font-weight: bolder;
+    font-size: 3em;
+    color: #EEEEBB;
+    background-color: #cc5577;
+    border: 2px solid #cc5577;
+    border-radius: 5px;
+    text-align: center;
+    grid-column: 2;
+    grid-row: 1 / 2;
+    padding: 1rem 1rem;
+}
+
+.home_stock {
+    width: 100%;
+    align-items: center;
+    grid-column: 2;
+    grid-row: 2 / 4;
+    font-weight: bolder;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 2em;
+    display: block;
+    color: #EEEEBB;
+    background-color: #cc5577;
+    border: 2px solid #cc5577;
+    border-radius: 5px;
+    padding: 1rem 1rem;
+}
+
+.home_stock input {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    width: 100%;
+    border: none;
+}
+
+.home_stock_button {
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: none;
+    color: #cc5577;
+    background-color: #EEEEBB;
 }

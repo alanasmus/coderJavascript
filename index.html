@@ -4,35 +4,57 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
     <title>Libreria Luar</title>
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div>
-                <a href="./index.html">
-                    <h2>Libreria Luar</h2>
-                </a>
-            </div>
-            <div class="menu">
-                <div class="menu_list">
-                    <a>Bienvenido/a</a>
+    <header class="container-fluid sticky-top wave">
+        <div class="row">
+            <nav class="navbar">
+                <div class="col-md-6">
+                    <a href="./index.html" class="logo ps-4">Libreria Luar</a>
                 </div>
-                <div class="menu_list">
-                    <a>Carrito</a>
+                <div class="col-md-5 d-flex justify-content-end me-3 menu">
+                    <div class="usuario_list">
+                        <a class="me-4 menu_test">Bienvenido/a</a>
+                    </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <h2>Simulador Interactivo - Libreria</h2>
-    
-    <script src="./js/main.js"></script>    
+        <div class="home">
+            <div class="home_container">
+                <picture class="home_picture">
+                    <img class="home_picture_principal" src="./img/IMG_1253.JPG" alt="">
+                </picture>
+                <h2 class="home_title">Somos Luar</h2>
+                <form class="home_stock" action="">
+                    <h3 class="">Ingreso de productos nuevos:</h3>
+                    <br>
+                    <label for="">Nombre del articulo:</label>
+                    <input type="text" name="Nombre">
+                    <br>
+                    <label for="">Precio de costo unitario:</label>
+                    <input type="number" name="Precio">
+                    <br>
+                    <label for="">Stock:</label>
+                    <input type="number" name="Stock">
+                    <br>
+                    <button class="home_stock_button" type="submit">Enviar Data</button>
+                </form>
+            </div>
+        </div>
     </main>
-
+    
     <footer>
+
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>    
 </body>
 </html>  
