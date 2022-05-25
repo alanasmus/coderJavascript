@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/librerialuar.jpg" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" 
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
@@ -13,8 +14,10 @@
     <header class="container-fluid sticky-top wave">
         <div class="row">
             <nav class="navbar">
-                <div class="col-md-6">
-                    <a href="./index.html" class="logo ps-4">Libreria Luar</a>
+                <div class="navbar_brand col-md-6">
+                    <a href="./index.html" class="logo ps-4">
+                        <img src="./img/librerialuar.jpg" alt="logo">
+                    </a>
                 </div>
                 <div class="col-md-5 d-flex justify-content-end me-3 menu">
                     <div class="usuario_list">
@@ -33,25 +36,34 @@
                 </picture>
                 <h2 class="home_title">Somos Luar</h2>
                 <form class="home_stock" action="">
-                    <h3 class="">Ingreso de productos nuevos:</h3>
-                    <br>
-                    <label for="">Nombre del articulo:</label>
-                    <input type="text" name="Nombre">
+                    <h3 class="home_stock_title">Ingreso de productos nuevos:</h3>
+                    
+                    <label for="">Nombre del articulo</label>
+                    <input type="text" name="nombre" id="nombre">
                     <br>
                     <label for="">Precio de costo unitario:</label>
-                    <input type="number" name="Precio">
+                    <input type="number" name="precioCosto" id="precioCosto">
                     <br>
                     <label for="">Stock:</label>
-                    <input type="number" name="Stock">
+                    <input type="number" name="stock" id="stock">
                     <br>
-                    <button class="home_stock_button" type="submit">Enviar Data</button>
+                    <button class="home_stock_button" type="submit" id="btnGuardar">Enviar Data</button>
                 </form>
             </div>
         </div>
     </main>
     
-    <footer>
-
+    <footer class="footer">
+        <div class="footer_container">
+            <div class="footer_text">
+                <p>"La delgada línea entre lo que queres y necesitas"</p>
+            </div>
+            <div class="footer_item">
+                <a class="footer_link" href="https://www.instagram.com/libreria.luar/">
+                    <img src="./img/instagram.png" alt="instagram" width="50">
+                </a>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
