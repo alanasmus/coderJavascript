@@ -1,5 +1,10 @@
 //Creo el array contenedor de stock
-const almacen = []; 
+let almacen = []; 
+if(localStorage.getItem("almacen") == null){
+    almacen = [];
+} else {
+    almacen = JSON.parse(localStorage.getItem("almacen"));
+}
 
 //Creo la Clase para los productos
 class Producto {
@@ -9,20 +14,17 @@ class Producto {
         this.stock = parseFloat (stock);
         this.precioFinal = this.precioCosto * 1.5;
     }    
-    /*sumaGanancia() {
-        this.precio = this.precioCosto * 1.4;
-    }*/
 }    
-
+/*
 //Mi stock de productos iniciales
 const producto1 = new Producto ("Lapiz Bic HB", 50, 10);
 const producto2 = new Producto ("Lapicera Bic negra", 90, 20);
-const producto3 = new Producto ("Lapicera Bic azul", 90, 15);
+const producto3 = new Producto ("Lapicera Bic azul", 90, 15); 
 
 cargarProducto(producto1);
 cargarProducto(producto2);
 cargarProducto(producto3);
-console.log(almacen);
+console.log(almacen); */
 actualizarTabla()
 
 //Funcion para cargar nuevos productos, para luego sumarlo al array "almacen" 
@@ -33,7 +35,8 @@ function crearProducto () {
     let nuevoProducto = new Producto(nombre, precioCosto, stock);
     almacen.push(nuevoProducto);
     actualizarTabla();
-    console.log(almacen);
+    //console.log(almacen);
+    localStorage.setItem("almacen", JSON.stringify(almacen));
 }
 
 function cargarProducto(nuevoProducto) {

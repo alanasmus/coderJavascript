@@ -69,7 +69,8 @@ main{
     justify-items: center;
     align-items: center;
     grid-template-columns: auto 1fr;
-    padding-top: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
     margin-right: auto;
     margin-left: auto;
     gap: 2rem;
