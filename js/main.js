@@ -28,6 +28,16 @@ function crearProducto () {
     actualizarTabla();
     //console.log(almacen);
     localStorage.setItem("almacen", JSON.stringify(almacen));
+    Swal.fire({
+        title: 'Stock Cargado Exitosamente!',
+        icon: 'success',
+        showClass: {
+            popup: 'animate__animated animate__zoomInRight'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__zoomOutLeft'
+        }
+    })
 }
 
 function cargarProducto(nuevoProducto) {
