@@ -1,0 +1,54 @@
+{
+    "almacen": [
+        {
+            "nombre": "Regla",
+            "precioCosto": 50,
+            "stock": 5
+        },
+        {
+            "nombre": "lapicera bic negra",
+            "precioCosto": 90,
+            "stock": 20
+        },
+        {
+            "nombre": "lapicera bic azul",
+            "precioCosto": 90,
+            "stock": 20
+        },
+        {
+            "nombre": "Cuaderno avon a4 rayado",
+            "precioCosto": 300,
+            "stock": 12
+        },
+        {
+            "nombre": "Cuaderno avon a4 cuadriculado",
+            "precioCosto": 300,
+            "stock": 12
+        },
+        {
+            "nombre": "lapiz bic h2",
+            "precioCosto": 70,
+            "stock": 10
+        },
+        {
+            "nombre": "marcador trabi negro",
+            "precioCosto": 120,
+            "stock": 8
+        },
+        {
+            "nombre": "marcador trabi azul",
+            "precioCosto": 120,
+            "stock": 8
+        },
+        {
+            "nombre": "goma blanca faber",
+            "precioCosto": 95,
+            "stock": 15
+        },
+        {
+            "nombre": "sacapuntas maped plastico",
+            "precioCosto": 140,
+            "stock": 12
+        }
+    ]
+}

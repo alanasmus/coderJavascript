@@ -1,0 +1,22 @@
+{
+  "name": "coderjavascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alanasmus/coderJavascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alanasmus/coderJavascript/issues"
+  },
+  "homepage": "https://github.com/alanasmus/coderJavascript#readme",
+  "dependencies": {
+    "sweetalert2": "^11.4.17"
+  }
+}
