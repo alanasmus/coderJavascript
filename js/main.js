@@ -73,30 +73,3 @@ const cargarData = async () => {
     actualizarTabla();
 }
 cargarData();
-
-
-
-
-
-
-
-
-
-/*const pedirData = () => {
-    fetch("https://swapi.dev/api/people").then((response) => {
-        console.log(response);
-        response.json().then((data) => {
-            console.log(data);
-            let html = "";
-            html += "<tr><th>Nombre</th><th>Sexo</th><th>Pelo</th><th>Piel</th></tr>";
-            for (const personaje of data.results) {
-                html += "<tr><td>" + personaje.name + "</td><td>"
-                    + personaje.gender + "</td><td>" + personaje.hair_color + "</td><td>" + personaje.skin_color + "</td></tr>";
-            }
-            document.querySelector("#tabla").innerHTML = html;
-        })
-    });
-
-}
-
-pedirData();*/
